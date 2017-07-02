@@ -2,9 +2,9 @@
 
 This framework provides methods for solving an advection equation with sources/sinks uptil 5-dimensional phase space. The framework consists of a linear as well as a non-linear solver. The non-linear solver is a semi-Lagrangian solver based on the method proposed in [Cheng & Knorr, 1976](http://adsabs.harvard.edu/abs/1976JCoPh..22..330C). The framework has been written with ease of use and extensibility in mind, and can be used to obtain solution for any equation of the following form:
 
-$$
+\begin{align}
 \frac{\partial f}{\frac t} + T1 \frac{\partial f}{\frac x1} + T2 \frac{\partial f}{\frac x2} + T3 \frac{\partial f}{\frac x3} + T4 \frac{\partial f}{\frac v1} + T5 \frac{\partial f}{\frac v2} = T6
-$$
+\end{align}
 
 Where $T_1$ to $T_6$ are terms that need to be coded in by the user.
 
